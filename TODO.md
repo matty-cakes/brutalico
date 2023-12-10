@@ -1,0 +1,4 @@
+- Create a basic Brutalism card to demonstrate potential 🟢
+- Update areas marked as "Fix" in card component 🟡
+  - Update the vars 🟡
+  - Addtl items 🟡

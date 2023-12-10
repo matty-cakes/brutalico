@@ -8,6 +8,9 @@ article {
   border-radius: var(--border-radius);
   background: var(--card-background-color);
   box-shadow: var(--card-box-shadow);
+  background-color: var(--card-background-color);
+  border: var(--border-width) solid var(--card-border-color);
+
 
   > header,
   > footer {
@@ -15,13 +18,12 @@ article {
     margin-left: calc(var(--block-spacing-horizontal) * -1);
     padding: calc(var(--block-spacing-vertical) * 0.66)
       var(--block-spacing-horizontal);
-    background-color: var(--card-sectionning-background-color);
   }
 
   > header {
     margin-top: calc(var(--block-spacing-vertical) * -1);
     margin-bottom: var(--block-spacing-vertical);
-    border-bottom: var(--border-width) solid var(--card-border-color);
+    border-bottom: 2px solid var(--card-border-color);
     border-top-right-radius: var(--border-radius);
     border-top-left-radius: var(--border-radius);
   }

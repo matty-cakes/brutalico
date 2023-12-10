@@ -8,14 +8,13 @@
 /**
  * Theme: default
  */
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
-  --font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
-    "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Public Sans", sans-serif;
   --line-height: 1.5;
   --font-weight: 400;
   --font-size: 16px;
-  --border-radius: 0.25rem;
+  --border-radius: 0.375rem;
   --border-width: 1px;
   --outline-width: 3px;
   --spacing: 1rem;
@@ -203,16 +202,9 @@ kbd {
   --accordion-border-color: var(--muted-border-color);
   --accordion-close-summary-color: var(--color);
   --accordion-open-summary-color: var(--muted-color);
-  --card-background-color: var(--background-color);
-  --card-border-color: var(--muted-border-color);
-  --card-box-shadow:
-    0.0145rem 0.029rem 0.174rem rgba(27, 40, 50, 0.01698),
-    0.0335rem 0.067rem 0.402rem rgba(27, 40, 50, 0.024),
-    0.0625rem 0.125rem 0.75rem rgba(27, 40, 50, 0.03),
-    0.1125rem 0.225rem 1.35rem rgba(27, 40, 50, 0.036),
-    0.2085rem 0.417rem 2.502rem rgba(27, 40, 50, 0.04302),
-    0.5rem 1rem 6rem rgba(27, 40, 50, 0.06),
-    0 0 0 0.0625rem rgba(27, 40, 50, 0.015);
+  --card-background-color: #d5aaaf;
+  --card-border-color: #000;
+  --card-box-shadow: 10px 10px hsl(205, 30%, 15%);
   --card-sectionning-background-color: #fbfbfc;
   --dropdown-background-color: #fbfbfc;
   --dropdown-border-color: #e1e6eb;
