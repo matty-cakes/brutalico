@@ -24,6 +24,7 @@
   --nav-link-spacing-horizontal: 0.5rem;
   --form-label-font-weight: var(--font-weight);
   --transition: 0.2s ease-in-out;
+  --button--motion-transition: 1s translate(4px, 4px);
   --modal-overlay-backdrop-filter: blur(0.25rem);
 }
 @media (min-width: 576px) {
@@ -208,7 +209,7 @@ kbd {
   --h6-color: #4d606d;
   --muted-color: hsl(205, 10%, 50%);
   --muted-border-color: hsl(205, 20%, 94%);
-  --primary: hsl(195, 85%, 41%);
+  --primary: #bc95d4;
   --primary-hover: hsl(195, 90%, 32%);
   --primary-focus: rgba(16, 149, 193, 0.125);
   --primary-inverse: #fff;
@@ -226,8 +227,9 @@ kbd {
   --del-color: #c62828;
   --blockquote-border-color: var(--muted-border-color);
   --blockquote-footer-color: var(--muted-color);
-  --button-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  --button-box-shadow: 4px 4px hsl(205, 30%, 15%);
   --button-hover-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  --button-border-color: #000;
   --form-element-background-color: transparent;
   --form-element-border-color: hsl(205, 14%, 68%);
   --form-element-color: var(--color);
