@@ -69,8 +69,10 @@
   --form-label-font-weight: var(--font-weight);
 
   // Transitions
-  --transition: 0.2s ease-in-out;
-  --button--motion-transition: 1s translate(4px, 4px);
+  --transition: .1s ease-in-out;
+
+  // Translations
+  --button-hover-translate: translate(3px, 3px);
 
   // Modal (<dialog>)
   --modal-overlay-backdrop-filter: blur(0.25rem);

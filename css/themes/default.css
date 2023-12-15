@@ -23,8 +23,8 @@
   --nav-link-spacing-vertical: 0.5rem;
   --nav-link-spacing-horizontal: 0.5rem;
   --form-label-font-weight: var(--font-weight);
-  --transition: 0.2s ease-in-out;
-  --button--motion-transition: 1s translate(4px, 4px);
+  --transition: .1s ease-in-out;
+  --button-hover-translate: translate(3px, 3px);
   --modal-overlay-backdrop-filter: blur(0.25rem);
 }
 @media (min-width: 576px) {
