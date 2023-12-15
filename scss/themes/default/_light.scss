@@ -25,13 +25,13 @@
   --primary-inverse: #{$white};
 
   // Secondary colors
-  --secondary: #{$grey-600};
+  --secondary: #{$purple-800};
   --secondary-hover: #{$grey-700};
   --secondary-focus: #{rgba($grey-600, 0.125)};
   --secondary-inverse: #{$white};
 
   // Contrast colors
-  --contrast: #{$grey-900};
+  --contrast: #{$aqua-900};
   --contrast-hover: #{$black};
   --contrast-focus: #{rgba($grey-600, 0.125)};
   --contrast-inverse: #{$white};
@@ -109,7 +109,7 @@
   $box-shadow-elevation: 1rem;
   $box-shadow-blur-strengh: 6rem;
   $box-shadow-opacity: 0.06;
-  --card-background-color: #{$rose-400};
+  --card-background-color: #{$white};
   --card-border-color: #{$black};
 
   

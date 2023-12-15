@@ -218,11 +218,11 @@ kbd {
   --primary-hover: hsl(195, 90%, 32%);
   --primary-focus: rgba(16, 149, 193, 0.125);
   --primary-inverse: #fff;
-  --secondary: hsl(205, 15%, 41%);
+  --secondary: #846894;
   --secondary-hover: hsl(205, 20%, 32%);
   --secondary-focus: rgba(89, 107, 120, 0.125);
   --secondary-inverse: #fff;
-  --contrast: hsl(205, 30%, 15%);
+  --contrast: #4c997f;
   --contrast-hover: #000;
   --contrast-focus: rgba(89, 107, 120, 0.125);
   --contrast-inverse: #fff;
@@ -273,7 +273,7 @@ kbd {
   --accordion-border-color: var(--muted-border-color);
   --accordion-close-summary-color: var(--color);
   --accordion-open-summary-color: var(--muted-color);
-  --card-background-color: #d5aaaf;
+  --card-background-color: #fff;
   --card-border-color: #000;
   --card-box-shadow: 10px 10px hsl(205, 30%, 15%);
   --card-sectionning-background-color: #fbfbfc;
@@ -941,18 +941,23 @@ button {
   text-decoration: none;
 }
 
+a[role=button]:hover {
+  --color: var(--color);
+}
+
 button,
 input[type=submit],
 input[type=button],
 input[type=reset],
 [role=button] {
-  --background-color: var(--primary);
+  --background-color: #bc95d4;
   --border-color: var(--button-border-color);
   --color: var(--color);
   --box-shadow: var(--button-box-shadow, 0 0 0 rgba(0, 0, 0, 0));
   padding: var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);
   border: var(--border-width) solid var(--border-color);
   border-radius: var(--border-radius);
+  background-color: var(--background-color);
   outline: none;
   box-shadow: var(--box-shadow);
   color: var(--color);
@@ -963,13 +968,31 @@ input[type=reset],
   cursor: pointer;
   transition: transform var(--transition), box-shadow var(--transition);
 }
-button:is([aria-current], :hover, :active, :focus),
-input[type=submit]:is([aria-current], :hover, :active, :focus),
-input[type=button]:is([aria-current], :hover, :active, :focus),
-input[type=reset]:is([aria-current], :hover, :active, :focus),
-[role=button]:is([aria-current], :hover, :active, :focus) {
+button:hover,
+input[type=submit]:hover,
+input[type=button]:hover,
+input[type=reset]:hover,
+[role=button]:hover {
   --box-shadow: var(--button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0));
   transform: var(--button-hover-translate);
+}
+
+:is(button, input[type=submit], input[type=button], [role=button]).secondary,
+input[type=reset] {
+  --background-color: var(--secondary);
+  --color: var(--secondary-inverse);
+}
+
+:is(button, input[type=submit], input[type=button], [role=button]).contrast {
+  --background-color: var(--contrast);
+  --color: var(--secondary-inverse);
+}
+
+:where(button, [type=submit], [type=button], [type=reset], [role=button])[disabled],
+:where(fieldset[disabled]) :is(button, [type=submit], [type=button], [type=reset], [role=button]),
+a[role=button]:not([href]) {
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 /**

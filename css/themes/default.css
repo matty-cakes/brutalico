@@ -213,11 +213,11 @@ kbd {
   --primary-hover: hsl(195, 90%, 32%);
   --primary-focus: rgba(16, 149, 193, 0.125);
   --primary-inverse: #fff;
-  --secondary: hsl(205, 15%, 41%);
+  --secondary: #846894;
   --secondary-hover: hsl(205, 20%, 32%);
   --secondary-focus: rgba(89, 107, 120, 0.125);
   --secondary-inverse: #fff;
-  --contrast: hsl(205, 30%, 15%);
+  --contrast: #4c997f;
   --contrast-hover: #000;
   --contrast-focus: rgba(89, 107, 120, 0.125);
   --contrast-inverse: #fff;
@@ -268,7 +268,7 @@ kbd {
   --accordion-border-color: var(--muted-border-color);
   --accordion-close-summary-color: var(--color);
   --accordion-open-summary-color: var(--muted-color);
-  --card-background-color: #d5aaaf;
+  --card-background-color: #fff;
   --card-border-color: #000;
   --card-box-shadow: 10px 10px hsl(205, 30%, 15%);
   --card-sectionning-background-color: #fbfbfc;
