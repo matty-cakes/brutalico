@@ -3,22 +3,40 @@
  */
 
 details {
+  --box-shadow: var(--button-box-shadow, 0 0 0 rgba(0, 0, 0, 0));
   display: block;
   margin-bottom: var(--spacing);
-  padding-bottom: var(--spacing);
+  border-left: var(--border-width) solid var(--accordion-border-color);
+  border-right: var(--border-width) solid var(--accordion-border-color);
   border-bottom: var(--border-width) solid var(--accordion-border-color);
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+
+  // TODO Fix these values: 
+  // padding-bottom: var(--spacing);
+  font-weight: 800;
+  color: black;
+
 
   summary {
     line-height: 1rem;
     list-style-type: none;
     cursor: pointer;
+    background-color: var(--primary);
 
-    &:not([role]) {
-      color: var(--accordion-close-summary-color);
-    }
+    // TODO: Fix these values
+    padding: 1.5rem;
+
+    
+    // border: var(--border-width) solid var(--accordion-border-color);
+    border-radius: 5px;
+
+    // &:not([role]) {
+    //   color: var(--accordion-close-summary-color);
+    // }
 
     @if $enable-transitions {
-      transition: color var(--transition);
+      // transition: color var(--transition);
     }
 
     // Reset marker
@@ -41,24 +59,23 @@ details {
       height: 1rem;
       margin-inline-start: calc(var(--spacing, 1rem) * 0.5);
       float: right;
-      transform: rotate(-90deg);
-      background-image: var(--icon-chevron);
+      background-image: var(--icon-plus);
       background-position: right center;
       background-size: 1rem auto;
       background-repeat: no-repeat;
       content: "";
 
       @if $enable-transitions {
-        transition: transform var(--transition);
+        transition: transform var(--accordion-transition);
       }
     }
 
     &:focus {
       outline: none;
 
-      &:not([role="button"]) {
-        color: var(--accordion-active-summary-color);
-      }
+      // &:not([role="button"]) {
+      //   color: var(--accordion-active-summary-color);
+      // }
     }
 
     // Type button
@@ -89,14 +106,14 @@ details {
     > summary {
       margin-bottom: calc(var(--spacing));
 
-      &:not([role]) {
-        &:not(:focus) {
-          color: var(--accordion-open-summary-color);
-        }
-      }
+      // &:not([role]) {
+      //   &:not(:focus) {
+      //     color: var(--accordion-open-summary-color);
+      //   }
+      // }
 
       &::after {
-        transform: rotate(0);
+        transform: rotate(45deg);
       }
     }
   }
