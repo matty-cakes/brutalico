@@ -1653,22 +1653,41 @@ canvas {
  * Accordion (<details>)
  */
 details {
-  --box-shadow: var(--button-box-shadow, 0 0 0 rgba(0, 0, 0, 0));
   display: block;
-  margin-bottom: var(--spacing);
+  border-top: var(--border-width) solid var(--accordion-border-color);
   border-left: var(--border-width) solid var(--accordion-border-color);
   border-right: var(--border-width) solid var(--accordion-border-color);
   border-bottom: var(--border-width) solid var(--accordion-border-color);
   border-radius: 5px;
-  box-shadow: var(--box-shadow);
-  font-weight: 800;
+  box-shadow: 4px 4px 0px 0px rgb(0, 0, 0);
+  font-weight: bolder;
   color: black;
+  margin-bottom: 1.5rem;
+}
+details section {
+  padding: 1.5rem;
+  font-weight: bolder;
+  color: black;
+  margin-bottom: 1em;
+}
+details section address,
+details section blockquote,
+details section dl,
+details section figure,
+details section form,
+details section ol,
+details section p,
+details section pre,
+details section table,
+details section ul {
+  margin-bottom: 0;
 }
 details summary {
   line-height: 1rem;
   list-style-type: none;
   cursor: pointer;
   background-color: var(--primary);
+  box-shadow: 2px 2px 0px 0px rgb(0, 0, 0), 0px 2px 0px 0px rgb(0, 0, 0);
   padding: 1.5rem;
   border-radius: 5px;
 }
@@ -1706,11 +1725,8 @@ details summary[role=button]::after {
   height: calc(1rem * var(--line-height, 1.5));
   background-image: var(--icon-chevron-button);
 }
-details[open] > summary {
-  margin-bottom: calc(var(--spacing));
-}
 details[open] > summary::after {
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
 }
 
 [dir=rtl] details summary {
