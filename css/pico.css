@@ -1774,6 +1774,8 @@ details section pre,
 details section table,
 details section ul {
   margin-bottom: 0;
+  font-weight: bolder;
+  color: black;
 }
 details summary {
   line-height: 1rem;
