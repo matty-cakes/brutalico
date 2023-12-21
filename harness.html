@@ -5,88 +5,253 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/pico.min.css" />
     <title>Brutalico</title>
+    <style>
+      #checks {
+        display: flex;
+      }
+
+      #checks label {
+        margin: 0rem 0.5rem;
+      }
+    </style>
   </head>
   <body>
+
     <main class="container">
-      <h1>Just The Components, Sir!</h1>
+      <nav>
+        <ul>
+          <li><strong>BRICO 🏭</strong></li>
+        </ul>
+        <ul>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#" role="button">Button</a></li>
+        </ul>
+      </nav>
+      <hr>
+      <h1>What We Got!</h1>
+
+      <div></div>
+      <fieldset id="checks">
+        <label for="check-all">
+          <input type="checkbox" id="check-all" name="all" checked />
+          Show All
+        </label>
+        <label for="check-cards">
+          <input type="checkbox" id="check-cards" name="cards" checked />
+          Cards
+        </label>
+        <label for="check-typography">
+          <input
+            type="checkbox"
+            id="check-typography"
+            name="typography"
+            checked
+          />
+          Typography
+        </label>
+        <label for="check-buttons">
+          <input type="checkbox" id="check-buttons" name="buttons" checked />
+          Buttons
+        </label>
+        <label for="check-accordions">
+          <input
+            type="checkbox"
+            id="check-accordions"
+            name="accordions"
+            checked
+          />
+          Accordions
+        </label>
+      </fieldset>
       <hr />
-      <h2>Card</h2>
-      <article>
-        <header><h3>Brutalico Card</h3></header>
-        <p>
-          Brutalist architecture is an architectural style that emerged during
-          the 1950s in the United Kingdom, among the reconstruction projects of
-          the post-war era but commonly known for its presence in post-war
-          communist nations.[1][2][3][4][5] Brutalist buildings are
-          characterised by minimalist constructions that showcase the bare
-          building materials and structural elements over decorative
-          design.[6][7] The style commonly makes use of exposed, unpainted
-          concrete or brick, angular geometric shapes and a predominantly
-          monochrome colour palette;[8][7] other materials, such as steel,
-          timber, and glass, are also featured.[9]
-        </p>
-      </article>
-      <h2>Buttons</h2>
-      <article>
-        <header><h3>Buttons</h3></header>
-        <p>Like Pico, Bruatlico provides a few fun buttons variants:</p>
-        <kbd>Normal Button</kbd>
-        <hr />
-        <button>Button</button>
 
-        <kbd>Normal Inline Button (a href="#" role="button")</kbd>
-        <hr />
-        <a href="" role="button">Button</a>
-        <br>
-        <hr />
+      <!-- Cards -->
+      <div class="demo" id="cards">
+        <h2>Cards</h2>
+        <article>
+          <header><h3>Brutalico Card</h3></header>
+          <p>
+            Brutalist architecture is an architectural style that emerged during
+            the 1950s in the United Kingdom, among the reconstruction projects
+            of the post-war era but commonly known for its presence in post-war
+            communist nations.[1][2][3][4][5] Brutalist buildings are
+            characterised by minimalist constructions that showcase the bare
+            building materials and structural elements over decorative
+            design.[6][7] The style commonly makes use of exposed, unpainted
+            concrete or brick, angular geometric shapes and a predominantly
+            monochrome colour palette;[8][7] other materials, such as steel,
+            timber, and glass, are also featured.[9]
+          </p>
+        </article>
+      </div>
 
-        <kbd>Input Submit</kbd>
-        <hr />
-        <input type="submit" />
+      <!-- Typography -->
+      <div class="demo" id="typography">
+        <h2>Typography</h2>
+        <article>
+          <header><h3>Typography in Sections</h3></header>
+          <p>
+            In this card we will go over each of the primary typography elements
+            and you can get an idea of how they will look.
+          </p>
+          <hr />
+          <!-- You're welcome dawg! -->
+          <!-- &lt; element &gt; -->
+          <details>
+            <summary>Headings</summary>
+            <kbd>&lt;h1&gt;</kbd>
+            <h1>Heading 1</h1>
+            <kbd>&lt;h2&gt;</kbd>
+            <h2>Heading 2</h2>
+            <kbd>&lt;h3&gt;</kbd>
+            <h3>Heading 3</h3>
+            <kbd>&lt;h4&gt;</kbd>
+            <h4>Heading 4</h4>
+            <kbd>&lt;h5&gt;</kbd>
+            <h5>Heading 5</h5>
+            <kbd>&lt;h6&gt;</kbd>
+            <h6>Heading 6</h6>
+          </details>
+        </article>
+      </div>
 
-        <kbd>Secondary Button (.secondary)</kbd>
-        <hr />
-        <button class="secondary">Button</button>
+      <!-- Buttons -->
+      <div class="demo" id="buttons">
+        <h2>Buttons</h2>
+        <article>
+          <header><h3>Buttons</h3></header>
+          <p>Like Pico, Bruatlico provides a few fun buttons variants:</p>
+          <kbd>Normal Button</kbd>
+          <hr />
+          <button>Button</button>
 
-        <kbd>Secondary Reset Input (classless secondary)</kbd>
-        <hr />
-        <input type="reset" />
+          <kbd>Normal Inline Button (a href="#" role="button")</kbd>
+          <hr />
+          <a href="" role="button">Button</a>
+          <br />
+          <hr />
 
-        <kbd>Contrast Button (.contrast)</kbd>
-        <hr />
-        <button class="contrast">Button</button>
+          <kbd>Input Submit</kbd>
+          <hr />
+          <input type="submit" />
 
-        <kbd>Disabled Button</kbd>
-        <hr />
-        <button disabled>Button</button>
+          <kbd>Secondary Button (.secondary)</kbd>
+          <hr />
+          <button class="secondary">Button</button>
 
+          <kbd>Secondary Reset Input (classless secondary)</kbd>
+          <hr />
+          <input type="reset" />
 
-      </article>
+          <kbd>Contrast Button (.contrast)</kbd>
+          <hr />
+          <button class="contrast">Button</button>
 
+          <kbd>Disabled Button</kbd>
+          <hr />
+          <button disabled>Button</button>
+        </article>
+      </div>
 
-      <h2>Accordions</h2>
-      <article>
-        <header><h3>Accordions</h3></header>
-        <p>You will also notice that Brutalico, like Pico, has accordions, but they are quite different.</p>
-        <p>Of particular note this is the first material change to Pico I'm making and I'm def nervous about it. The difference from Pico in this case is that I want the user to use BOTH a single <kbd>&lt;summary&gt;</kbd> element for the accordion header area and as many <kbd>&lt;section&gt;</kbd> elements as they need for elements within thr accordion body.</p>
+      <!-- Accordions -->
+      <div class="demo" id="accordions">
+        <h2>Accordions</h2>
+        <article>
+          <header><h3>Accordions</h3></header>
+          <p>
+            You will also notice that Brutalico, like Pico, has accordions, but
+            they are quite different.
+          </p>
+          <p>
+            Of particular note this is the first material change to Pico I'm
+            making and I'm def nervous about it. The difference from Pico in
+            this case is that I want the user to use BOTH a single
+            <kbd>&lt;summary&gt;</kbd> element for the accordion header area and
+            as many <kbd>&lt;section&gt;</kbd> elements as they need for
+            elements within thr accordion body.
+          </p>
 
-        <details>
-          <summary>Lorem ipsum dolor sit</summary>
-          <section>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores delectus totam repellat provident minima, veniam sunt ullam voluptates, aliquid tempore consequatur, blanditiis laborum! Consequuntur hic veritatis deserunt! Iusto, nisi!</p>
-          </section>
-        </details>
-        
-        <details open>
-          <summary>Three More Things </summary>
-          <section>
-            <ul>
-              <li>No...</li>
-              <li>Just Two</li>
-            </ul>
-          </section>
-        </details>
-      </article>
+          <details>
+            <summary>Lorem ipsum dolor sit</summary>
+            <section>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis maiores delectus totam repellat provident minima,
+                veniam sunt ullam voluptates, aliquid tempore consequatur,
+                blanditiis laborum! Consequuntur hic veritatis deserunt! Iusto,
+                nisi!
+              </p>
+            </section>
+          </details>
+
+          <details open>
+            <summary>Three More Things</summary>
+            <section>
+              <ul>
+                <li>No...</li>
+                <li>Just Two</li>
+                <li>Fine three It Is...</li>
+              </ul>
+            </section>
+          </details>
+        </article>
+      </div>
     </main>
   </body>
+  <script>
+    const getAll = (qs) => document.querySelectorAll(qs)
+    const getByID = (id) => document.getElementById(id)
+    const print = (s) => console.log(s)
+
+    const checks = Array.from(getAll("#checks input[type='checkbox']"))
+    const demos = Array.from(getAll(".demo"))
+
+    const setPageState = (e) => {
+      let namesToChecks = checks.map((el) => ({
+        name: el.name,
+        checked: el.checked,
+      }))
+
+      const allClicked = e.target.name === "all"
+      let all = namesToChecks.find((item) => item.name === "all")
+      let = allChecked = all.checked
+
+      if (allClicked && allChecked) {
+        checks.forEach((check) => check.checked = true)
+        demos.forEach((item) => item.style.display = "initial")
+        return
+      }
+
+      const nonAll = namesToChecks.filter((i) => i.name !== "all")
+      const anyNonAllUnchecked = nonAll.some((i) => !getByID(i.name).checked)
+
+      if (allChecked && anyNonAllUnchecked) {
+        allChecked = false
+        all.checked = false
+        getByID("check-all").checked = false
+      }
+
+      const checksToDemos = demos.map((demo) => {
+        const checked = namesToChecks.find((item) => item.name === demo.id)[
+          "checked"
+        ]
+        return { id: demo.id, checked }
+      })
+
+      if (!allChecked) {
+        checksToDemos.forEach((item) => {
+          if (!item.checked) {
+            getByID(item.id).style.display = "none"
+          } else {
+            getByID(item.id).style.display = "initial"
+          }
+        })
+      }
+    }
+
+    checks.forEach((check) => {
+      check.addEventListener("change", (e) => setPageState(e))
+    })
+  </script>
 </html>

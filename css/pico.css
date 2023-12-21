@@ -1821,6 +1821,9 @@ details summary[role=button]::after {
 details summary[role=button]:not(.outline).contrast::after {
   background-image: var(--icon-chevron-button-inverse);
 }
+details[open] > summary {
+  margin-bottom: calc(var(--spacing));
+}
 details[open] > summary::after {
   transform: rotate(-45deg);
 }

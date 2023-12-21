@@ -1755,6 +1755,9 @@ details summary[role=button]::after {
   height: calc(1rem * var(--line-height, 1.5));
   background-image: var(--icon-chevron-button);
 }
+details[open] > summary {
+  margin-bottom: calc(var(--spacing));
+}
 details[open] > summary::after {
   transform: rotate(-45deg);
 }

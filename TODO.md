@@ -18,8 +18,13 @@ This is OSS project mgmt at it's finest. Record what you are doing and what you 
   - Add the "+" SVG 🟢
   - Make the "+" rotate upon clicking 🟢
   - Make font weight heavier 🟢
-  - Fix errant pixels in the border 
+  - Fix errant pixels in the border 🟡/🟢
   - Check the component for TODOs 🟡
+
+
+- Modify README to reflect your intentions 🔴
+- Make harness page include all components as they exist now 🟡
+  - Make harness page available as a GH pages page
 
 
 - Notes & Errata:
