@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link rel="stylesheet" href="css/pico.min.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
     <title>Brutalico</title>
     <style>
       #checks {
@@ -23,13 +25,11 @@
           <li><strong>BRICO 🏭</strong></li>
         </ul>
         <ul>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#" role="button">Button</a></li>
+          <li><a href="https://github.com/matty-cakes/brutalico" role="button"><i data-feather="github"></i></a></li>
         </ul>
       </nav>
       <hr>
-      <h1>What We Got!</h1>
+      <h1>What We Got! (So far...)</h1>
 
       <div></div>
       <fieldset id="checks">
@@ -199,6 +199,9 @@
       </div>
     </main>
   </body>
+  <script>
+    feather.replace();
+  </script>
   <script>
     const getAll = (qs) => document.querySelectorAll(qs)
     const getByID = (id) => document.getElementById(id)
