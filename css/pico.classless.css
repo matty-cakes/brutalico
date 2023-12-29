@@ -2035,6 +2035,7 @@ progress::-moz-progress-bar {
 details[role=list],
 li[role=list] {
   position: relative;
+  background-color: var(--background-color);
 }
 
 details[role=list] summary + ul,
@@ -2042,17 +2043,16 @@ li[role=list] > ul {
   display: flex;
   z-index: 99;
   position: absolute;
-  top: auto;
   right: 0;
   left: 0;
   flex-direction: column;
   margin: 0;
+  margin-top: 70px;
   padding: 0;
-  border: var(--border-width) solid var(--dropdown-border-color);
+  background-color: var(--primary);
   border-radius: var(--border-radius);
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-  background-color: var(--dropdown-background-color);
   box-shadow: var(--card-box-shadow);
   color: var(--dropdown-color);
   white-space: nowrap;
@@ -2112,9 +2112,8 @@ details[role=list] summary {
 details[role=list] summary:not([role]) {
   height: calc(1rem * var(--line-height) + var(--form-element-spacing-vertical) * 2 + var(--border-width) * 2);
   padding: var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);
-  border: var(--border-width) solid var(--form-element-border-color);
   border-radius: var(--border-radius);
-  background-color: var(--form-element-background-color);
+  background-color: var(--primary);
   color: var(--form-element-placeholder-color);
   line-height: inherit;
   cursor: pointer;
@@ -2122,7 +2121,6 @@ details[role=list] summary:not([role]) {
 }
 details[role=list] summary:not([role]):active, details[role=list] summary:not([role]):focus {
   border-color: var(--form-element-active-border-color);
-  background-color: var(--form-element-active-background-color);
 }
 details[role=list] summary:not([role]):focus {
   box-shadow: 0 0 0 var(--outline-width) var(--form-element-focus-color);

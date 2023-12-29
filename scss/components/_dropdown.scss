@@ -6,6 +6,7 @@
 details[role="list"],
 li[role="list"] {
   position: relative;
+  background-color: var(--background-color);
 }
 
 details[role="list"] summary + ul,
@@ -13,17 +14,19 @@ li[role="list"] > ul {
   display: flex;
   z-index: 99;
   position: absolute;
-  top: auto;
   right: 0;
   left: 0;
   flex-direction: column;
   margin: 0;
+  margin-top: 70px;
   padding: 0;
-  border: var(--border-width) solid var(--dropdown-border-color);
+  // border: var(--border-width) solid var(--dropdown-border-color);
+  background-color: var(--primary);
+  // background-color: var(--dropdown-background-color);
+
   border-radius: var(--border-radius);
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-  background-color: var(--dropdown-background-color);
   box-shadow: var(--card-box-shadow);
   color: var(--dropdown-color);
   white-space: nowrap;
@@ -94,9 +97,10 @@ details[role="list"] {
       );
       padding: var(--form-element-spacing-vertical)
         var(--form-element-spacing-horizontal);
-      border: var(--border-width) solid var(--form-element-border-color);
+      // border: var(--border-width) solid var(--form-element-border-color);
       border-radius: var(--border-radius);
-      background-color: var(--form-element-background-color);
+      // background-color: var(--form-element-background-color);
+      background-color: var(--primary);
       color: var(--form-element-placeholder-color);
       line-height: inherit;
       cursor: pointer;
@@ -110,7 +114,7 @@ details[role="list"] {
       &:active,
       &:focus {
         border-color: var(--form-element-active-border-color);
-        background-color: var(--form-element-active-background-color);
+        // background-color: var(--form-element-active-background-color);
       }
 
       &:focus {

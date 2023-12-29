@@ -31,3 +31,5 @@ This is OSS project mgmt at it's finest. Record what you are doing and what you 
   - https://neobrutalism-components.vercel.app/docs
   - https://www.svgbackgrounds.com/tools/svg-to-css/
   - https://maketintsandshades.com/#7fffd4 
+  - https://feathericons.com/
+    - https://github.com/feathericons/feather#feather
